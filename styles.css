@@ -1,0 +1,109 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-image: url("https://c1.staticflickr.com/3/2856/9163126439_ba341593de_b.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.title {
+	font-size: 7.5em;
+	text-align: center;
+}
+
+a:link{
+	text-decoration: none;
+	color: orange;
+}
+
+.title::selection{
+	background-color: green;
+}
+
+.title:hover{
+	cursor: pointer;
+}
+
+.image1{
+	width: 20%;
+	position: absolute;
+	top: 25%;
+	left: 75%;
+	transition: transform 1s ease-in-out;
+}
+
+.image1:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.image2{
+	width: 13%;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	transition: transform 1s ease-in-out;
+}
+
+.image2:hover{
+	transform: scale(1.1);
+	cursor: pointer;	
+}
+
+table{
+	background-color: red;
+	opacity: 0.5;
+	
+}
+
+#block{
+	background-color: #FFCC19;
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	opacity: 0.5;
+	border: 5px solid black;
+	z-index: -1;
+}
+
+.logo1{
+	width: 7%;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+
+.logo2{
+	width: 6%;
+	position: absolute;
+	top: 40%;
+	left: 56%;
+}
+
+.text1{
+	font-size: 2em;
+	position: absolute;
+	top: 40%;
+	left: 49.5%;
+}
+
+.text2{
+	font-size: 2em;
+	position: absolute;
+	top: 56%;
+	left: 41.5%;
+}
+
+.text3{
+	font-size: 2em;
+	position: absolute;
+	top: 56%;
+	left: 57%;
+}
