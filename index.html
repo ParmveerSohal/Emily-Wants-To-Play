@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+	<title>Javscript Quiz</title>
+
+		<!-- My Javascript -->
+		<script language="javascript">
+
+			var scoreAdd = 0;
+
+
+			function MsgBox1(answer){
+				
+				if(answer==="No"){
+					alert("You Are Right!");
+					scoreAdd ++;
+				} else {
+					alert("You Are Wrong!");
+					scoreAdd --;
+				}
+
+			}
+
+			function MsgBox2(answer){
+				if(answer==="No"){
+					alert("You Are Right!");
+					scoreAdd ++;
+				} else {
+					alert("You Are Wrong!");
+					scoreAdd --;
+				}
+
+			}
+
+			function MsgBox3(answer){
+				if(answer==="Yes"){
+					alert("You Are Right!");
+					scoreAdd ++;
+				} else {
+					alert("You Are Wrong!");
+					scoreAdd --;
+				}
+
+			}
+
+			function MsgBox4(answer){
+				if(answer==="Lightbulb"){
+					alert("You Are Right!");
+					scoreAdd ++;
+				} else {
+					alert("You Are Wrong!");
+					scoreAdd --;
+				}
+
+			}
+
+			function MsgBox5(answer){
+				if(answer==="Turkey" ){
+					alert("You Are Right!");
+					scoreAdd ++;
+				} else{
+					alert("You Are Wrong!");
+					scoreAdd --;
+				}
+			}
+
+
+
+		</script>
+	</head>
+	<body>
+			<center>
+				<h1>Javascript Quiz</h1>
+			</center>
+
+			<form>
+				<p>Is Africa a Country?</p>
+				<input name="textinput" type="text">
+				<input name="submit" type=button value="Click Me" onclick="MsgBox1(form.textinput.value)">  
+			</form>
+
+			<form>
+				<p>Is American Football the National Sport of U.S.A?</p>
+				<input name="textinput" type="text">
+				<input name="submit" type=button value="Click Me" onclick="MsgBox2(form.textinput.value)">  
+			</form>
+
+			<form>
+				<p>Is Seattle a City?</p>
+				<input name="textinput" type="text">
+				<input name="submit" type=button value="Click Me" onclick="MsgBox3(form.textinput.value)">  
+			</form>
+
+			<form>
+				<p>Which Invention is Thomas Edison Best Known for?</p>
+				<input name="textinput" type="text">
+				<input name="submit" type=button value="Click Me" onclick="MsgBox4(form.textinput.value)">  
+			</form>
+
+			<form>
+				<p>Which Country Lies in the Middle of Two Continents?</p>
+				<input name="textinput" type="text">
+				<input name="submit" type=button value="Click Me" onclick="MsgBox5(form.textinput.value)">  
+			</form>
+
+			<form>
+				<input name="submit" type=button value="Score" onclick="alert(scoreAdd);">
+			</form>
+
+	</body>
+</html>
+
