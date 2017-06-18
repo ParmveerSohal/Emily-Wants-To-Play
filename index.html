@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Emily Wants To Play</title>
+		<style type="text/css">
+			#question1, #question2{
+				display: none;
+			}
+		</style>
+
+	</head>
+	<body>
+		<center>
+			<h1>Emily Wants To Play</h1>
+		</center>
+
+		<p id="myDiv">1. Where Would You Like to Start</p>
+		<button type="Submit" onclick="myFunction1()">Main Entrance</button>
+		<button type="Submit" onclick="alert('You Died: Emily Killed You With A Lawnmover');">Back Yard</button>
+		<button id type="Submit" onclick="alert('You Died: Emily Pushed You');">Balcony</button>
+
+		<div id="question1">
+			<p>2. You Enter The Mansion, Do You Enter...</p>
+			<button type="Submit" onclick="promptFunction('You Died: She Drowned You in the Bathroom Sink')">Bathroom</button>
+			<button type="Submit" onclick="myFucntion2()">Kitchen</button>
+			<button type="Submit" onclick="alert('You Died: Emily Drowned You In Laundry Detergent'); promptFunction()">Laundry</button>
+		</div>
+
+		<div id="question2">
+			<p>3. You Entered The Kitchen, Emily is infront of you, what do you do</p>
+			<button type="Submit"onclick="alert('You Died: Emily Stabbed You Back'); promptFunction()">Stab Her With A Knife</button>
+			<button type="Submit"onclick="alert('You Died: Emily Punched You Back'); promptFunction()">Fist Fight To Death</button>
+			<button type="Submit" onclick="alert('You Survived');">Run Away</button>
+		</div>
+
+				<script type="text/javascript">
+					function myFunction1(){
+						document.getElementById("question1").style.display = "block";
+					}
+
+					function myFucntion2(){
+						document.getElementById("question2").style.display = "block";
+					}
+
+					function promptFunction(string){
+						alert(string); 
+
+						var answer = prompt("Would You Like To Play Again");
+						if(answer === "Yes"){
+							window.open("https://www.w3schools.com/css/css_display_visibility.asp");
+						}
+					}
+			</script>
+
+	</body>
+</html>
